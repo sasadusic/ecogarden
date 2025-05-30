@@ -50,6 +50,7 @@
   }
 :root{
     --main: #009432;
+    --main-03: hsla(140, 40%, 37%, 0.3);
     --main-2: #C4E538;
     --cont-main: #F79F1F;
     --header: #2e2e2e;
@@ -284,6 +285,30 @@ a{
 }
 .main{
   min-height: 100vh;
+}
+#usluge{
+  .sub-header{
+    margin-bottom: 12px;
+  }
+  .usluge-cont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .usluge-card{
+    background: var(--main-03);
+    border-radius: 8px;
+    padding: 18px;
+  }
+  .u-card-head{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .u-img{
+    width: 50px;
+  }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (width < 1200px)  {}
