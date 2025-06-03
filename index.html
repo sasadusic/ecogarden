@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoGarden Marinković</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -22,7 +24,10 @@
         <img src="assets/images/leaf.png" alt="" class="leaf leaf-3">
         <img src="assets/images/leaf.png" alt="" class="leaf leaf-4">
         <nav class="nav" id="nav">
-            <div class="nav-left"><span class="main-color">Eco</span>Garden</div>
+            <div class="nav-left">
+                <a  href="#header" class="logo"><span class="main-color">Eco</span>Garden</a>
+                <div id="hamburger" class="hamburger">x</div>
+            </div>
             <div class="nav-center">
                 <a href="#" class="nav-link">Početna</a>
                 <a href="#usluge" class="nav-link">Moje Usluge</a>
@@ -41,7 +46,8 @@
                 <p class="phar hero-phar">Uređivanje travnjaka, podkresivanje trnja i oblikovanje žbunja – pouzdano, precizno i sa stilom.
                     Vaša bašta u sigurnim rukama iskusnog majstora Darka Marinkovića.</p>
                 <div class="btn-cont">
-                    <a href="#footer" class="btn green-btn">Pozovi Me</a><a href="#main" class="btn main-color">Moje Usluge</a>
+                    <a href="#footer" class="btn green-btn">Pozovi Me</a>
+                    <a href="#usluge" class="btn main-color">Moje Usluge</a>
                 </div>                
             </div>
                 
@@ -121,8 +127,8 @@
 </p>
                     </div>
                     <div class="i-card-body">
-                        <img src="assets/images/english-1.jpg" alt="" class="i-card-image">
-                    <a href="engleski.html" class="i-link">Istrazi ovaj stil</a>
+                        <img src="assets/images/french-1.jpg" alt="" class="i-card-image">
+                    <a href="francuski.html" class="i-link">Istrazi ovaj stil</a>
                 </div>
             </div>
                 <div class="i-card">
@@ -131,16 +137,44 @@
                         <p class="phar">Prirodan izgled, meki prelazi i organski raspored biljaka. Biljke se kombinuju tako da deluju kao da rastu spontano, a staze i žardinjere prate prirodan tok. Ovaj stil je topao, opušten i idealan za stvaranje prijatnog kutka za uživanje u prirodi.</p>
                     </div>
                     <div class="i-card-body">
-                        <img src="assets/images/french-1.jpg" alt="" class="i-card-image">
-                        <a href="francuski.html" class="i-link">Istrazi ovaj stil</a>
+                        <img src="assets/images/english-1.jpg" alt="" class="i-card-image">
+                        <a href="engleski.html" class="i-link">Istrazi ovaj stil</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section nacin" id="nacin">
             <h2 class="sub-header">Moj Način Rada</h2>
+            <p class="phar nacin-phar">U svom radu koristim isključivo profesionalni alat i mašine, kako bih svakoj površini pružio besprekoran izgled i dugotrajan rezultat.</p>
+            <p class="phar nacin-phar-2">Profesionalna kosačica – za ravnomerno i precizno šišanje travnjaka svih veličina</p>
+            <p class="phar nacin-phar-2">Trimer za nepristupačne delove – detaljna obrada uz ivice, oko drveća, zidova i ivičnjaka</p>
+            <p class="phar nacin-phar-2">Štil (Stihl) motorna testera – za precizno i bezbedno sečenje grana i oblikovanje žbunja</p>
+            <p class="phar nacin-phar-2">Alat za oblikovanje ivica – jasan, uredan i estetski efekat travnjaka uz staze i rubove</p>
+
+</p>
         </section>
     </main>
-    <footer id="footer" class="footer"></footer>
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-cont">
+            <div class="footer-item">
+                <h3 class="label mb-12">Kontaktirajte me putem telefona, vibera ili E-maila</h3>
+                <p class="phar muted mb-24">Mozete me pozvati ili poslati poruku u bilo koje doba dana ili noći</p>
+                <div class="contact-cont">            
+                    <p class="phar"><i class="fa fa-phone" aria-hidden="true"></i> 060 000 000</p>
+                    <p class="phar"><i class="fa fa-envelope" aria-hidden="true"></i> ehample@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3 class="label mb-12">Ili me možete kontaktirati preko društvenih mreža</h3>
+                <div class="icon-cont">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
 </body>
 </html>
