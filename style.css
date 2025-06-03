@@ -98,6 +98,9 @@ a{
   color: #ececec;
   background: var(--main);
 }
+.orange-color{
+  color: var(--cont-main);
+}
 .green-btn:hover{
   filter: brightness(1.2);
 }
@@ -456,7 +459,7 @@ a{
     flex-direction: column;
   }
   .hero{
-    margin-top: 100px;
+    margin-top:24px;
   }
   .usluge-cont{
     grid-template-columns: 1fr;
@@ -480,8 +483,17 @@ a{
     width: 300px;
     height: 300px;
   }
+  .leaf{
+    width: 150px;
+  }
   .hero{
     grid-template-columns: 1fr;
+  }
+  .hero-right{
+    grid-row: 1;
+  }
+  .hero-plant{
+    height: 40vh;
   }
 }
 
@@ -490,5 +502,8 @@ a{
   .nav{
     width: 100%;
     left: calc(-100vw + 80px);
+  }
+  .contact-cont{
+    flex-direction: column;
   }
 }
