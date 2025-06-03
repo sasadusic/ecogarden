@@ -1,6 +1,7 @@
 const nav = document.getElementById('nav')
 const hamburger = document.getElementById('hamburger')
 const navLinks = document.querySelectorAll('.nav-link')
+const contact = document.getElementById('contact')
 const lightColor = '#ececec'
 const darkColor = '#2e2e2e'
 
@@ -29,4 +30,34 @@ window.addEventListener("scroll", () => {
 hamburger.onclick = () => {
     hamburger.classList.toggle('active')
     nav.classList.toggle('active')
+    if(hamburger.classList.contains('active')){
+        hamburger.innerHTML = '<i class="bi bi-x"></i>'
+    }else{
+        hamburger.innerHTML = '<i class="bi bi-list"></i>'
+
+    }
+}
+navLinks.forEach(link => link.onclick = () => {
+    hamburger.classList.toggle('active')
+    nav.classList.toggle('active')
+    if(hamburger.classList.contains('active')){
+        hamburger.innerHTML = '<i class="bi bi-x"></i>'
+    }else{
+        hamburger.innerHTML = '<i class="bi bi-list"></i>'
+    
+    }
+    
+})
+
+contact.onclick = () => {
+    // alert('test')
+    hamburger.classList.toggle('active')
+    nav.classList.toggle('active')
+    if(hamburger.classList.contains('active')){
+        hamburger.innerHTML = '<i class="bi bi-x"></i>'
+    }else{
+        hamburger.innerHTML = '<i class="bi bi-list"></i>'
+    
+    }
+    
 }

@@ -429,11 +429,19 @@ a{
     width: 250px;
     background: transparent;
     height: 100vh;
-    padding: 32px;
+    padding: 24px;
     left: -180px;
   }
   .hamburger{
     display: block;
+    width: 28px;
+    height: 28px;
+    background: var(--dark-02);
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    color: #ececec;
   }
   .nav-left{
     display: flex;
@@ -446,6 +454,9 @@ a{
   }
   .nav-center{
     flex-direction: column;
+  }
+  .hero{
+    margin-top: 100px;
   }
   .usluge-cont{
     grid-template-columns: 1fr;
@@ -464,7 +475,11 @@ a{
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (width < 768px) {}
+@media (width < 768px) {
+  .hero{
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (width < 576px) {
